@@ -43,7 +43,7 @@ void widget::on_level_2_clicked()
 {
     if(!flag){
         flag=true;
-        message="2";
+        message="start1";
         socket->write(message.toUtf8());
 
     }
@@ -52,7 +52,8 @@ void widget::on_level_3_clicked()
 {
     if(!flag){
         flag=true;
-        message="3";
+        message="start2";
+         socket->write(message.toUtf8());
 
     }
 }
